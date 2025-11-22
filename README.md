@@ -4,42 +4,42 @@ Build the image using the following command
 To install maven(in order to package the code as a war file),
 
 ```bash
-$ sudo apt install maven -y
+sudo apt install maven -y
 ```
 Clone the repo;
 
 ```bash
-$ git clone https://github.com/astiksubudhi/Docker-Simple-Java-Project.git
+git clone https://github.com/astiksubudhi/Docker-Simple-Java-Project.git
 ```
 Switch to the directory;
 ```bash
-$ cd <DirectoryName>
+cd <DirectoryName>
 ```
 
 To verify the files;
 ```bash
-$ ls -l
+ls -l
 ```
 
 Package the application code using maven goals(it'll delete the existing "target" folder and create new "target" folder, inside which application .war file will be available);
 
 ```bash
-$ mvn clean package
+mvn clean package
 ```
 To build the docker image;
 ```bash
-$ docker build -t javamavenfirst:v1 
+docker build -t javamavenfirst:v1 
 ```
 To check the created image;
 ```bash
-$ docker images
+docker images
 ```
 
 Run the Docker container using the command shown below.
 (Here the docker engine will run the container from image javamavenfirst:v1 in detached mode and with port mapping 8080:8080 )
 
 ```bash
-$  docker run -d -p 8080:8080 --name javamavenapp javamavenfirst:v1
+docker run -d -p 8080:8080 --name javamavenapp javamavenfirst:v1
 ```
 
 The application will be accessible at (http:PublicIPofVM:8080/WarFileName/)
