@@ -44,5 +44,5 @@ docker run -d -p 8080:8080 --name javamavenapp javamavenfirst:v1
 
 The application will be accessible at (http:PublicIPofVM:8080/WarFileName/)
 
-In my machine I am using a self hosted Ubuntu VM(Inside Proxmox VE) in which the docker is running so I am able to access the application using VM's IP (http://192.168.1.190:8080/WarFileName/)
+In my machine I am using a self hosted Ubuntu VM(Inside Proxmox VE) in which the docker is running so I am able to access the application using VM's IP (http://192.168.1.190:8080/Simple-Maven-App/)
 
