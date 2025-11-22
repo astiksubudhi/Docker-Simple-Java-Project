@@ -28,7 +28,7 @@ mvn clean package
 ```
 To build the docker image;
 ```bash
-docker build -t javamavenfirst:v1 
+docker build -t javamavenfirst:v1 .
 ```
 To check the created image;
 ```bash
